@@ -1,21 +1,51 @@
-House Price Prediction
-📌 Overview
-This project implements a machine learning model to predict house prices based on key features such as location, size, number of rooms, and amenities. It utilizes regression techniques to analyze historical data and provide accurate price estimations.
+🏡 House Price Prediction
+📌 Project Overview
+This project predicts house prices based on various real estate features using machine learning regression models. It involves data preprocessing, exploratory data analysis (EDA), feature engineering, model training, and evaluation to find the most accurate model.
 
-🚀 Features
-Data Preprocessing: Cleans and transforms raw housing data for better model performance.
-Feature Selection: Identifies key factors influencing house prices.
-Machine Learning Model: Uses regression algorithms to predict house prices.
-Evaluation Metrics: Assesses model accuracy using metrics like RMSE and R² score.
-🛠️ Technologies Used
-Python
-Pandas, NumPy (Data Handling)
-Scikit-Learn (Machine Learning)
-Matplotlib, Seaborn (Data Visualization)
 📂 Dataset
-The model is trained on a dataset containing house features and their respective prices. The dataset is preprocessed to handle missing values and outliers for improved accuracy.
+The dataset includes multiple features influencing house prices, such as:
 
-🔮 Future Improvements
-Integrating additional features like neighborhood ratings and market trends.
-Implementing advanced models such as Random Forest or XGBoost for better predictions.
-Deploying the model as a web application for real-time predictions.
+🏠 Size of the house
+📍 Location
+🛏️ Number of bedrooms
+🚪 Number of bathrooms
+🏗️ Year built
+🌆 Neighborhood details
+🔍 Exploratory Data Analysis (EDA)
+📊 Histograms to visualize feature distributions.
+🎨 Correlation matrix (heatmap) to analyze feature relationships.
+🔍 Scatter plots to observe patterns between features and house prices.
+🛠️ Data Preprocessing
+✅ Handling missing values
+🔤 One-Hot Encoding for categorical variables
+🔄 Feature scaling using StandardScaler
+✂️ Splitting data into training and validation sets
+🚀 Machine Learning Models Used
+Implemented multiple regression models for price prediction:
+
+Model	Type
+📈 Linear Regression	Baseline model
+🔍 Ridge Regression	Regularized model
+✂️ Lasso Regression	Feature selection
+🔄 ElasticNet Regression	Combined L1 & L2
+🌳 Decision Tree Regressor	Non-linear model
+🌲 Random Forest Regressor	Ensemble learning
+⚡ Gradient Boosting Regressor	Boosted ensemble
+📏 Evaluation Metrics
+The models were evaluated using:
+✔️ Mean Absolute Error (MAE)
+✔️ Mean Squared Error (MSE)
+✔️ Root Mean Squared Error (RMSE)
+✔️ R² Score (Coefficient of Determination)
+✔️ Mean Absolute Percentage Error (MAPE) 🆕
+✔️ Explained Variance Score 🆕
+
+🏆 Best Model & Results
+After comparing performance, Random Forest Regressor & Gradient Boosting Regressor achieved the best accuracy! 🚀
+
+📢 Key Findings:
+✅ Tree-based models outperformed linear models.
+✅ Feature selection & scaling improved accuracy.
+✅ Gradient Boosting performed slightly better than Random Forest based on MAPE and R² Score.
+
+
